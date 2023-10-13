@@ -1,8 +1,9 @@
 #!/bin/bash
-rm -rf c4_deployment-5
+
+rm -rf Kura_C4_D5
 source test/bin/activate
-git clone https://github.com/kura-labs-org/c4_deployment-5.git
-cd c4_deployment-5
+git clone https://github.com/bjones519/Kura_C4_D5.git
+cd Kura_C4_D5
 pip install -r requirements.txt
 pip install gunicorn
 python database.py
