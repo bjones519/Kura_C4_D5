@@ -29,6 +29,10 @@ stage ('Deploy') {
 steps {
 sh '''#!/bin/bash
 echo "command to run the setup.sh"
+ssh ubuntu@10.0.102.138
+wget https://raw.githubusercontent.com/bjones519/Kura_C4_D5/master/setup.sh
+chmod u+x setup.sh
+./setup.sh
 '''
 }
 }

@@ -1,1 +1,10 @@
-# Kura_C4_D5
+## Purpose
+
+
+## Steps
+
+
+## Systems Diagram
+
+
+## Optimization
