@@ -30,7 +30,9 @@ steps {
 sh '''#!/bin/bash
 echo "command to run the setup.sh"
 scp /var/lib/jenkins/workspace/Deployment5_master/setup.sh ubuntu@10.0.102.138:/home/ubuntu
-ssh ubuntu@10.0.102.138 'bash -s < /home/ubuntu/setup.sh'
+ssh ubuntu@10.0.102.138
+chmod +x setup.sh
+./setup.sh
 '''
 }
 }
