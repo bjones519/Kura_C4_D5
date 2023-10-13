@@ -1,5 +1,6 @@
 #!/bin/bash
 
+rm -rf Kura_C4_D5
 python3.7 -m venv test
 source test/bin/activate
 git clone https://github.com/kura-labs-org/c4_deployment-5.git
