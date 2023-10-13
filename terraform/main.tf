@@ -66,6 +66,16 @@ module "app_service_sg" {
       cidr_blocks = "0.0.0.0/0"
     }
   ]
+
+  egress_with_cidr_blocks = [
+    {
+      from_port   = -1
+      to_port     = -1
+      protocol    = "-1"
+      description = "All protocols"
+      cidr_blocks = "0.0.0.0/0"
+    }
+  ]
 }
 
 resource "aws_instance" "web_server01" {
