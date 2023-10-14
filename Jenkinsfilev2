@@ -5,6 +5,9 @@ pipeline {
       steps {
         sh '''#!/bin/bash
         echo "command to run the pkill.sh"
+        scp /var/lib/jenkins/workspace/Deployment5_master/pkill.sh ubuntu@10.0.102.138:/home/ubuntu
+        ssh ubuntu@10.0.102.138 "chmod +x /home/ubuntu/pkill.sh"
+        ssh ubuntu@10.0.102.138 "./pkill.sh"
         '''
      }
    }
