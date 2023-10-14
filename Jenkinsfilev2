@@ -12,10 +12,9 @@ pipeline {
   steps {
      sh '''#!/bin/bash
      echo "command to run the setup2.sh"
-     ssh ubuntu@10.0.102.138
-     wget https://raw.githubusercontent.com/bjones519/Kura_C4_D5/master/setup2.sh
-     chmod u+x setup.sh
-     ./setup.sh
+     scp /var/lib/jenkins/workspace/Deployment5_master/setup2.sh ubuntu@10.0.102.138:/home/ubuntu
+     ssh ubuntu@10.0.102.138 "chmod +x /home/ubuntu/setup2.sh"
+     ssh ubuntu@10.0.102.138 "./setup2.sh"
     '''
       }
     }
