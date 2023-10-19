@@ -18,7 +18,7 @@ Deploy a python flask application using terraform for infrastructure automation 
 
 ## Systems Diagram
 
-![Deployment5Diagram](screenshots/Screenshot%202023-10-13%20at%2011.31.57%20PM.png)
+![Deployment5Diagram](screenshots/Screenshot%202023-10-18%20at%209.31.56%20PM.png)
 
 
 ## Optimization
