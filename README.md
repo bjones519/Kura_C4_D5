@@ -1,5 +1,5 @@
 ## Purpose
-Deploy a python flask application using terraform for infrastructure automation to proivision our VPC and server infrastructure
+Deploy a python flask application using terraform to proivision our VPC and server infrastructure
 
 ## Steps
 1. Using terraform create your infrastructure for the following resources
