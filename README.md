@@ -1,5 +1,5 @@
 ## Purpose
-Deploy a python flask application using terraform to proivision our VPC and server infrastructure
+Deploy a python flask application using Jenkins on AWS infrastructure proivisioned using terraform
 
 ## Steps
 1. Using terraform create your infrastructure for the following resources
